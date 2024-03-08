@@ -52,8 +52,10 @@
                 $grade = "B";
             } else if ($avg >= 60) {
                 $grade = "C";
-            } else {
+            } else if($avg >= 50){
                 $grade = "D";
+            } else {
+                $grade = "E";
             }
 
             if($avg >= 65) {
