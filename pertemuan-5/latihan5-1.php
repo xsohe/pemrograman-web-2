@@ -1,7 +1,6 @@
 <?php 
     $nameFile = "bukutamu.dat";
     if(isset($_POST['submit'])) {
-        
         if(!file_exists($nameFile)) {
             $file = fopen($nameFile, 'w');
             fclose($file);
