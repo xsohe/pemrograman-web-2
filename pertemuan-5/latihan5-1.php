@@ -1,4 +1,13 @@
-<?php 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan pertemuan 5</title>
+</head>
+<body>
+    
+    <?php 
     $nameFile = "bukutamu.dat";
     if(isset($_POST['submit'])) {
         if(!file_exists($nameFile)) {
@@ -21,16 +30,8 @@
         
         echo "Data berhasil disimpan";
     }
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan pertemuan 5</title>
-</head>
-<body>
+    ?>
+        
     <form action="" method="post">
         <label for="nama">Nama : </label>
         <input type="text" name="nama" required></br></br>
