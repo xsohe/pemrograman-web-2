@@ -1,19 +1,21 @@
 <?php
-session_start();
+    session_start();
 
-if (!isset($_SESSION['segitiga'])) {
-    $_SESSION['segitiga'] = [];
-}
+    if (!isset($_SESSION['segitiga'])) {
+        $_SESSION['segitiga'] = [];
+    }
 
-if (isset($_POST['proses'])) {
-    $alas = $_POST["alas"];
-    $tinggi = $_POST["tinggi"];
-
-    $luas = 0.5 * $alas * $tinggi;
-    $_SESSION['segitiga'][] = array("alas" => $alas, "tinggi" => $tinggi, "luas" => $luas);
-}
-
-// session_unset();
+    if (isset($_POST['proses'])) {
+        $alas = $_POST["alas"];
+        $tinggi = $_POST["tinggi"];
+        if (count($_SESSION['segitiga']) < 5) {
+            $luas = 0.5 * $alas * $tinggi;
+            $_SESSION['segitiga'][] = array("alas" => $alas, "tinggi" => $tinggi, "luas" => $luas);
+        } else {
+            session_unset();
+            session_destroy();
+        }
+    }
 ?>
 
 <!DOCTYPE html>
