@@ -29,22 +29,22 @@
 
             switch($operator) {
                 case "+":
-                    $hasil = $nilai1 + $nilai2;
+                    echo "<center><font size=5>$nilai1 + $nilai2 = ". $nilai1 + $nilai2 . "</font></center>";
                     break;
                 case "-":
-                    $hasil = $nilai1 - $nilai2;
+                    echo "<center><font size=5>$nilai1 - $nilai2 = ". $nilai1 - $nilai2 . "</font></center>";
                     break;
                 case "*":
-                    $hasil = $nilai1 * $nilai2;
+                    echo "<center><font size=5>$nilai1 x $nilai2 = ". $nilai1 * $nilai2 . "</font></center>";
                     break;
                 case "/":
-                    $hasil = $nilai1 / $nilai2;
+                    echo "<center><font size=5>$nilai1 : $nilai2 = ". $nilai1 / $nilai2 . "</font></center>";
                     break;
                 default: 
                     echo "Masukan nilai terlebih dahulu!";
             }
 
-            echo "<center><font size=5>Hasil : $hasil</font></center>";
+            echo "";
         }
     ?>
 

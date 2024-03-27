@@ -49,6 +49,7 @@
         <legend>
             <?php 
              session_start();
+             
                 $menu = isset($_POST['choose']) ? $_POST['menu'] : (isset($_SESSION['menu']) ? $_SESSION['menu'] : null);
                 $legend = $menu == '1' ? 'Penggunaan IF' : 
                         ($menu == '2' ? 'Penggunaan Switch...Case' : 
