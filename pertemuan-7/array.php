@@ -41,13 +41,13 @@
             <th>Luas</th>
         </tr>
         <?php
-        foreach ($_SESSION['segitiga'] as $data) {
-            echo "<tr>";
-            echo "<td>{$data['alas']}</td>";
-            echo "<td>{$data['tinggi']}</td>";
-            echo "<td>{$data['luas']}</td>";
-            echo "</tr>";
-        }
+            foreach ($_SESSION['segitiga'] as $data) {
+                echo "<tr>";
+                echo "<td>{$data['alas']}</td>";
+                echo "<td>{$data['tinggi']}</td>";
+                echo "<td>{$data['luas']}</td>";
+                echo "</tr>";
+            }
         ?>
     </table>
 </body>
