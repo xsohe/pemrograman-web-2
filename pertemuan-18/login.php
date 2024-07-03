@@ -44,6 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label for="password">Password:</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
+                <div>
+                    <p>Belum punya akun? <a href="register.php">Register</a></p>
+                </div>
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
         </div>
